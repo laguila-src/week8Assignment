@@ -5,99 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="stylesheet" href="week8.css">
 </head>
 <body>
   
     <!-- Changed div to nav to make html semantic  -->
     <!-- navigation bar-begins -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+    <nav class="navbar">
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     </nav>
     <!-- navigation bar-end -->
-
-    <h1>About Mosaics</h1>
-    <h5>The Trencas style of Spanish mosaics (below) represented a unique combination of shapes, sizes, textures, and colors</h5>
-    <img 
-    alt="Mosaic with Zellig star pattern from Morocco"
-    height="300px" 
-    src="https://cdn.shopify.com/s/files/1/2395/6385/files/dimitry-b-fKVpSqRSAFw-unsplash.jpg?v=1666323409"
-    />
-
-    <!-- <p style="text-align:center">&#10087;</p> -->
-
-    <h3>Themes</h3>
-    <p>
+    
+    <h1 id="fancy-heading">About Mosaics</h1>
+    <div class="top-pic-div">
+        <img 
+        alt="Mosaic with Zellig star pattern from Morocco"
+        height="350px" 
+        src="https://cdn.shopify.com/s/files/1/2395/6385/files/dimitry-b-fKVpSqRSAFw-unsplash.jpg?v=1666323409"
+        />
+        <figcaption>The Trencas style of Spanish mosaics represented a unique combination of shapes, sizes, textures, and colors</figcaption>
+    </div>
+    
+    <!-- <p>&#10087;</p> -->
+    
+    <div class="info-paragraph">
+        <!-- <h3>Themes</h3> -->
+        <br>
+        <p>
         The most popular subject for mosaics was mythological scenes, such as the triumphs of Neptune, which are frequently found. The Orpheus myth (with animals) and the muses, sometimes with the god Apollo, 
         are also often illustrated. Inspiration could also come from daily life, like hunting (often with dogs), agriculture, fishing, as well as arts and crafts. The four seasons and the sea are also the 
         subject of numerous mosaics.
-    </p>
+        </p>
+        <br>
+    </div>
      
 
     <!-- Add a youtube video about a discovery of ancient mosaics -->
-    <h4>Discovery of Byzantine mosaic in Gaza</h4>
-    <iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/xmRurA1DOUc">
-    </iframe>
-
+    <div class="video-div">
+        <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/xmRurA1DOUc"
+        title="Mosaic Discovery in Gaza">
+        </iframe>
+        <figcaption>A Palestinian farmer and his son unearthed an ancient Byzantine-era mosaic dated back to as early as the 5th century while planting an olive tree.</figcaption>
+    </div>
     
     <!-- Start of Table -->
-    <!-- Adding semantic html -->
-    <h3>Table of Mosaics Periods</h3>
-    <table>
-        <thead>
-            <th>Mosaic Style</th>
-            <th>Period</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Ancient Greek</td>
-                <td>[5th century BCE]</td>
-            </tr>
-            <tr>
-                <td>Roman</td>
-                <td>[2nd or 1st century BCE]</td>
-            </tr>
-            <tr>
-                <td>Early Christian</td>
-                <td>[313 CE]</td>
-            </tr>
-            <tr>
-                <td>Early Bizantine</td>
-                <td>[493–526 CE]</td>
-            </tr>
-            <tr>
-                <td>Medieval</td>
-                <td>[c. 1143]</td>
-            </tr>
-            <tr>
-                <td>Renassaince</td>
-                <td>[15th and 16th c]</td>
-            </tr>
-            <tr>
-                <td>Pre-Columbian</td>
-                <td>[c. 1376–1519]</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <h3>Table of Mosaic Art Periods</h3>
+        <table>
+            <thead>
+                <th>Mosaic Style</th>
+                <th>Period</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ancient Greek</td>
+                    <td>[5th century BCE]</td>
+                </tr>
+                <tr>
+                    <td>Roman</td>
+                    <td>[2nd or 1st century BCE]</td>
+                </tr>
+                <tr>
+                    <td>Early Christian</td>
+                    <td>[313 CE]</td>
+                </tr>
+                <tr>
+                    <td>Early Bizantine</td>
+                    <td>[493–526 CE]</td>
+                </tr>
+                <tr>
+                    <td>Medieval</td>
+                    <td>[c. 1143]</td>
+                </tr>
+                <tr>
+                    <td>Renassaince</td>
+                    <td>[15th and 16th c]</td>
+                </tr>
+                <tr>
+                    <td>Pre-Columbian</td>
+                    <td>[c. 1376–1519]</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <!-- End of Table  -->
 
 
     <!-- Beginning of unordered list -->
-    <h4>Materials Used to Make Mosaics</h4>
-    <ul>
-      <li>Stone</li>
-      <li>Glass</li>
-      <li>Shells</li>
-      <li>Ivory</li>
-      <li>Garnet</li>
-      <li>Turquoise</li>
-      <li>Mother-of-pearl</li>
-    </ul>
+    <div class="material-list-div">
+        <h4>Materials Used to Make Mosaics</h4>
+        <ul>
+            <li>Stone</li>
+            <li>Marble</li>
+            <li>Tile</li>
+            <li>Glass</li>
+            <li>Smalto (glass paste)</li>
+            <li>Pottery</li>
+            <li>Shells</li>
+            <li>Ivory</li>
+            <li>Garnet</li>
+            <li>Turquoise</li>
+            <li>Mother-of-pearl</li>
+        </ul>
+        <p>Mosaics were made with small colored squares called tesserae which were cut
+            from materials such as the ones listed above.
+        </p>
+    </div>
 <!-- End of unordered list -->
-
 </body>
 </html>

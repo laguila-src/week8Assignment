@@ -5,53 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mosaic Art</title>
-    <link rel="stylesheet" href="week08Styles.css">
+    <link rel="stylesheet" href="week8.css">
 </head>
 <body>
-    <!-- Changed div to nav to make this semantic html -->
+
     <!-- navigation bar-begins -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+    <nav class="navbar">
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     </nav>
     <!-- navigation bar-end -->
 
-    <h1>Mosaic Art</h1>
-    <p>
+    <div class="home-paragraph-div">
+        <h1>Mosaic Art</h1>
+        <p>
         Mosaic is the art of creating images with an assemblage of small pieces of colored glass, stone, or other materials. The earliest known examples of
         mosaics made of different materials were found at a temple building in Ubaid, Mesopotamia, and are dated to the second half of 3rd millennium BCE.
         They consist of pieces of colored stones, shells and ivory.  
-    </p>
+        </p>
+    </div>
 
     <!-- Images with description begin -->
     <!-- Placed images in unordered list and reorganized elements -->
-    <ul>
-        <li>
-            <h4>A beautiful mosaic on the Tomb of Hafez, Iran</h4>
-            <img 
-            alt="Picture of mosaic art on the The Tomb of Hafez"
-            height="300px"
-            src="https://cdn.shopify.com/s/files/1/2395/6385/files/shayan-ghiasvand-URNybiCn9d0-unsplash.jpg?v=1666323221"
-            />
-        </li>
-        <li>
-            <h4>This Zellig star pattern adds a striking feature to Hassan II Mosque in Casablanca, Morocco</h4>
-            <img 
-            alt="Mosaic with Zellig star pattern from Morocco"
-            height="200px" 
-            src="https://cdn.shopify.com/s/files/1/2395/6385/files/pexels-alberto-capparelli-5139045.jpg?v=1666321284" 
-            />
-        </li>
-        <li>
-            <h4>Ornate mosaic border with birds found near Via Panisperna in Rome, Italy</h4>
-            <img
-            alt="Ornate mosaic border with birds"
-            height="300px"
-            src="https://i0.wp.com/the-past.com/wp-content/uploads/2021/08/post-1_image4-14-scaled.jpg?resize=840%2C629&ssl=1"
-            />
-        </li>
-    </ul>
+    <div class="home-images-div">
+        <ul>
+            <li>
+                <h4>A beautiful mosaic on the Tomb of Hafez, Iran</h4>
+                <img 
+                alt="Picture of mosaic art on the The Tomb of Hafez"
+                height="300px"
+                src="https://cdn.shopify.com/s/files/1/2395/6385/files/shayan-ghiasvand-URNybiCn9d0-unsplash.jpg?v=1666323221"
+                />
+            </li>
+            <li>
+                <h4>This Zellig star pattern adds a striking feature to Hassan II Mosque in Casablanca, Morocco</h4>
+                <img 
+                alt="Mosaic with Zellig star pattern from Morocco"
+                height="200px" 
+                src="https://cdn.shopify.com/s/files/1/2395/6385/files/pexels-alberto-capparelli-5139045.jpg?v=1666321284" 
+                />
+            </li>
+            <li>
+                <h4>Ornate mosaic border with birds found near Via Panisperna in Rome, Italy</h4>
+                <img
+                alt="Ornate mosaic border with birds"
+                height="300px"
+                src="https://i0.wp.com/the-past.com/wp-content/uploads/2021/08/post-1_image4-14-scaled.jpg?resize=840%2C629&ssl=1"
+                />
+            </li>
+        </ul>
+    </div>
     <!-- Images with description end -->  
 </body>
 </html>
