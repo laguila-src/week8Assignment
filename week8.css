@@ -1,16 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-/* GLOBAL */
-* {
-    box-sizing: border-box; /* so padding doesn't affect the width of any element */
-    margin: 10;
-    padding: 10;
-}
 
 body {
     font-family: 'Poppins', sans-serif;
     background-color: rgb(127, 225, 255);
 }
-
 
 figcaption {
     text-align: left;
@@ -28,33 +21,31 @@ figcaption {
 
 /* NAVIATION BAR */
 .navbar {
+    display: flex;
     background-color: burlywood;
-    padding: 1px;
+    justify-content: center;
+    align-items:center;
 }
 
 .navbar ul{
     margin: 0;
     padding: 0;
     list-style-type:none;
-    display: flex;
     overflow: hidden;
 }
 
 .navbar li{
-    display: inline;
-    margin: 0 15px;
+    display:inline;
+    margin: 0px 15px;
     text-align: center;
     background:none;
     color: white;
-    padding: 10px;
-    float: left;
+    padding: 15px;
 }
 
 .navbar a{
     color: solid black;
-    text-decoration:solid;
     font-size: larger;
-    display: block;
 }
 
 .navbar a:hover{
@@ -95,9 +86,9 @@ figcaption {
 
 .home-images-div {
     display: flex;
+    flex-direction:column;
     justify-content: center;
-    flex-direction:row;
-    align-items:flex-start;
+    align-items:center;
     flex-wrap: wrap;
     margin: 2rem;
     border-radius: 1rem;
@@ -105,12 +96,15 @@ figcaption {
 }
 
 .home-images-div ul li{
+    min-height: 100px;
     font-style: italic;
+    font-size: small;
 }
 
 .home-images-div img{
     border-radius: 1rem;
-    margin: auto;
+    margin: 10px;
+    border: 2px solid #333;
 }
 
 /* ABOUT PAGE */
@@ -122,6 +116,7 @@ figcaption {
 
 .top-pic-div img{
     border-radius: 1rem;
+    border: 2px solid rgb(240, 215, 173);
 }
 
 .info-paragraph {
@@ -131,13 +126,13 @@ figcaption {
 }
 
 .video-div {
-    align-items: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    display: flex;
 }
 
+/* TABLE */
 .container{
     width: 600px;
     margin: 0 auto;
@@ -166,11 +161,11 @@ figcaption {
     font-size:small;
 }
 
+/* CONTACT PAGE */
 .comment-div {
     font-size: small;
     color:rgba(165, 50, 42, 0.993);
 }
-
 
 .contact-form-div{
     font-size:medium;
@@ -179,7 +174,7 @@ figcaption {
     padding: 20px;
 }
 
-/* CONTACT PAGE */
+
 input[type="submit"] {
     padding: .5em 1em;
     border-radius: 6px;
